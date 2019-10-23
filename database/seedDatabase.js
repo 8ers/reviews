@@ -19,7 +19,6 @@ let reviewSchema = mongoose.Schema({
 	Title: String,
   Username: String,
   ProfilePic: String,
-  ProfilePic: String,
   Time: String,
   TimeFormated:String,
 	Content: String,

@@ -162,7 +162,7 @@ const Rating = (props) => {
           </div>
           <div>Value</div>
         </div>
-        <img  className="ratingPicture"/>
+
       </div>
     </div>
   </div>
