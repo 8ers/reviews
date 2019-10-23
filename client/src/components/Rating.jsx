@@ -1,4 +1,6 @@
 import React from 'react'
+import '../styles/Rating.css'
+import rating from "../styles/ratingItem.png"
 
 const Rating = (props) => {
   var allRatings={
@@ -20,34 +22,48 @@ const Rating = (props) => {
     allRatings.Value += props.allReviews[review].Value
   }
 
-  allRatings.Checkin = allRatings.Checkin/props.allReviews.length
-  allRatings.Communication = allRatings.Communication/props.allReviews.length
-  allRatings.Location = allRatings.Location/props.allReviews.length
-  allRatings.Cleanliness = allRatings.Cleanliness/props.allReviews.length
-  allRatings.Accuracy = allRatings.Accuracy/props.allReviews.length
-  allRatings.Value = allRatings.Value/props.allReviews.length
-  allRatings.Average = allRatings.Checkin+allRatings.Communication+allRatings.Location+allRatings.Cleanliness+allRatings.Accuracy+allRatings.Value
+  allRatings.Checkin = (allRatings.Checkin/props.allReviews.length).toFixed(1)
+  allRatings.Communication = (allRatings.Communication/props.allReviews.length).toFixed(1)
+  allRatings.Location = (allRatings.Location/props.allReviews.length).toFixed(1)
+  allRatings.Cleanliness = (allRatings.Cleanliness/props.allReviews.length).toFixed(1)
+  allRatings.Accuracy = (allRatings.Accuracy/props.allReviews.length).toFixed(1)
+  allRatings.Value = (allRatings.Value/props.allReviews.length).toFixed(1)
+  allRatings.Average = Number(allRatings.Checkin)+Number(allRatings.Communication)+Number(allRatings.Location)+Number(allRatings.Cleanliness)+Number(allRatings.Accuracy)+Number(allRatings.Value)
 
   allRatings.Average = (allRatings.Average/6).toFixed(2)
   allRatings.Average = Number(allRatings.Average)
 
+
+
   var Checkin= width* (allRatings.Checkin/5)
+  Checkin = Checkin.toFixed(1)
   Checkin= Checkin.toString() + '%'
+
   var Cleanliness= width* (allRatings.Cleanliness/5)
+  Cleanliness= Cleanliness.toFixed(1)
   Cleanliness= Cleanliness.toString() + '%'
+
   var Communication= width* (allRatings.Communication/5)
+  Communication= Communication.toFixed(1)
   Communication= Communication.toString() + '%'
+
   var Accuracy= width* (allRatings.Accuracy/5)
+  Accuracy= Accuracy.toFixed(1)
   Accuracy= Accuracy.toString() + '%'
+
   var Location= width* (allRatings.Location/5)
+  Location=Location.toFixed(1)
   Location= Location.toString() + '%'
+
   var Value= width* (allRatings.Value/5)
+  Value=Value.toFixed(1)
   Value= Value.toString() + '%'
 
   return(
   <div className="ratingSection">
     <div className='averageRating'>{allRatings.Average}</div>
     <span style={starStyle}>&#9733;</span>
+    <span className='reviewsLabel'>Reviews</span>
     <div className='categoriesSection'>
       <div className='categoryRow'>
         <div className='categories'>
@@ -146,6 +162,7 @@ const Rating = (props) => {
           </div>
           <div>Value</div>
         </div>
+        <img  className="ratingPicture"/>
       </div>
     </div>
   </div>

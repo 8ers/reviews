@@ -1,0 +1,58 @@
+.ratingSection {
+  position:relative;
+  border-bottom: 1px solid rgb(221, 221, 221);
+  padding-bottom: 20px;
+
+}
+
+.averageRating{
+  position: absolute;
+  left: 20px;
+  top: 0px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+  border-right: 1px solid rgb(221, 221, 221);
+  padding-right: 10px;
+  margin-bottom:20px;
+
+}
+
+.reviewsLabel{
+  margin-left:8%;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+}
+
+.categoriesSection{
+  margin-top:20px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.02);
+  border-radius: 10px;
+  padding:3%;
+}
+.categories {
+  float:left;
+  width:50%;
+}
+
+.categoryRow {
+  padding-bottom: 30px;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+}
+
+.leftRating{
+  position:absolute;
+  left: 32%;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+}
+
+.rightRating{
+  position:absolute;
+  left: 82%;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+}
+
+.ratingPicture {
+  width: 90%;
+}

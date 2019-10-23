@@ -1,0 +1,76 @@
+.allButton{
+  display:flex;
+  justify-content: left;
+  margin-top:2%;
+}
+
+.endPageBut {
+  margin-right: 20px;
+  border-radius: 50%;
+  background-color: white;
+  border-color: #04868b;
+  border-right-color:#04868b;
+  border-bottom-color:#04868b;
+  border-width: 1px;
+  color: #04868b;
+  border-style: solid;
+}
+
+.tripleDot {
+  margin-right: 20px;
+  background-color:white;
+  border-color:white;
+  color:#04868b;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-style: none;
+  font-size:20px;
+}
+
+.pageBut {
+  margin-right: 20px;
+  background-color:white;
+  border-color:white;
+  color:#04868b;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-style: none;
+  font-size:20px;
+}
+
+.currentPageBut {
+  margin-right: 20px;
+  background-color:#04868b;
+  color:white;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-style: none;
+  border-radius:50%;
+  font-size:20px;
+}
+
+.currentPageBut:hover{
+   text-decoration: underline;
+}
+
+.pageBut:hover{
+  text-decoration: underline;
+}
+
+.pageBut:focus {
+  outline: none;
+}
+.currentPageBut:focus {
+  outline: none;
+}
+.endPageBut:focus {
+  outline: none;
+}
+
+.tripleDot:focus {
+  outline: none;
+}
+

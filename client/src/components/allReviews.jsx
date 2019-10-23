@@ -1,6 +1,8 @@
 import React from 'react'
 import OwnerReply from './reply.jsx'
+import  '../styles/allReview.css'
 const AllReviews = (props) => {
+
   return(
   <div>
 

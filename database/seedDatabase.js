@@ -66,14 +66,14 @@ function getRandomInt(max) {
 let save = (reviews, cb) => {
   var test=0;
   var ownerInfo =[]
-  for(var i=0; i<10; i++) {
+  for(var i=0; i<100; i++) {
     var ownerPic = faker.image.avatar();
     var ownerName = faker.name.firstName();
     ownerInfo.push({pic: ownerPic,
                      name: ownerName
                    })
     }
-  for(var i=0; i<10; i++) {
+  for(var i=0; i<100; i++) {
     var numReviews = Math.floor(Math.random() * Math.floor(100));
     for(var j=0; j<=numReviews; j++) {
       var replyornot = Math.floor(Math.random() * Math.floor(10));
@@ -114,7 +114,7 @@ let save = (reviews, cb) => {
 }
 
 
-//save();
+save();
 
 //console.log(faker.image.avatar())
 

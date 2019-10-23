@@ -1,0 +1,33 @@
+
+.reviewReplies {
+  position:relative;
+  padding-top: 10px;
+  padding-left:30px;
+  font-size: 15px;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+}
+
+.replyInfo{
+  position:relative;
+  left:60px;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+  width: 87%;
+
+}
+
+.replyImage {
+  position:absolute;
+}
+
+.OwnerName {
+  font-weight: bold;
+}
+
+.OwnerReply {
+  margin-top:5px;
+}
+
+.replyTime {
+  margin-top:10px;
+
+}

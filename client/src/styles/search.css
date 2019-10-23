@@ -1,0 +1,22 @@
+.backToReview{
+
+  background-color:white;
+  border-color:white;
+  color:#04868b;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-left-style: none;
+  font-size:20px;
+}
+
+
+.searchContainer{
+  display:flex;
+  justify-content:space-between;
+}
+
+.searchStyle{
+  margin-top:2%;
+  font-size: large;
+}
