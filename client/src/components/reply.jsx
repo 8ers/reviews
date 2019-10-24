@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/Reply.css'
+import '../styles/reply.css'
 
 const OwnerReply = (props) => {
   // console.log('hi')
