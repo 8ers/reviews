@@ -31,9 +31,13 @@ class App extends React.Component {
   componentDidMount(){
    // console.log(`http://localhost:3001${window.location.pathname}`);
     var id=window.location.pathname.split('/')[2]
+    console.log(window.location.href)
+    var url=window.location.href;
+    url = url.split(':')[0]+':' + url.split(':')[1]
+    console.log(url)
     //id = id.slice(7)
     //console.log(id, 'this is id')
-    Axios.get(`http://localhost:3001/roomID/${id}`)
+    Axios.get(`${url}:3001/roomID/${id}`)
     .then((data)=> {
       this.setState({
       reviews: data.data,

@@ -7207,7 +7207,7 @@ module.exports = lowPriorityWarning;
 /* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var content = __webpack_require__(124);
+var content = __webpack_require__(123);
 
 if (typeof content === 'string') {
   content = [[module.i, content, '']];
@@ -7744,7 +7744,7 @@ var _react = __webpack_require__(14);
 
 var _react2 = _interopRequireDefault(_react);
 
-__webpack_require__(231);
+__webpack_require__(233);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -10999,9 +10999,13 @@ var App = function (_React$Component) {
 
       // console.log(`http://localhost:3001${window.location.pathname}`);
       var id = window.location.pathname.split('/')[2];
+      console.log(window.location.href);
+      var url = window.location.href;
+      url = url.split(':')[0] + ':' + url.split(':')[1];
+      console.log(url);
       //id = id.slice(7)
       //console.log(id, 'this is id')
-      _axios2.default.get('http://localhost:3001/roomID/' + id).then(function (data) {
+      _axios2.default.get(url + ':3001/roomID/' + id).then(function (data) {
         _this2.setState({
           reviews: data.data,
           currentReviews: data.data.slice(0, 7),
@@ -12318,7 +12322,7 @@ var _reply = __webpack_require__(62);
 
 var _reply2 = _interopRequireDefault(_reply);
 
-__webpack_require__(232);
+__webpack_require__(231);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -12402,7 +12406,7 @@ var _react = __webpack_require__(14);
 
 var _react2 = _interopRequireDefault(_react);
 
-__webpack_require__(233);
+__webpack_require__(232);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -13564,7 +13568,7 @@ exports.push([module.i, ".ratingSection {\r\n  position:relative;\r\n  border-bo
 
 exports = module.exports = __webpack_require__(18)(false);
 // Module
-exports.push([module.i, "\r\n.reviewReplies {\r\n  position:relative;\r\n  padding-top: 10px;\r\n  padding-left:30px;\r\n  font-size: 15px;\r\n  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;\r\n}\r\n\r\n.replyInfo{\r\n  position:relative;\r\n  left:60px;\r\n  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;\r\n  width: 87%;\r\n\r\n}\r\n\r\n.replyImage {\r\n  position:absolute;\r\n}\r\n\r\n.OwnerName {\r\n  font-weight: bold;\r\n}\r\n\r\n.OwnerReply {\r\n  margin-top:5px;\r\n}\r\n\r\n.replyTime {\r\n  margin-top:10px;\r\n\r\n}\r\n", ""]);
+exports.push([module.i, ".review {\r\n  margin:0px;\r\n  margin-right: 0%;\r\n  margin-top: 3%;\r\n  padding-bottom: 2%;\r\n  border-bottom: 1px solid rgb(221, 221, 221);\r\n}\r\n\r\n\r\n.reviewContent {\r\n  position: relative;\r\n  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;\r\n  font-size: 17px;\r\n  padding-top: 60px;\r\n}\r\n\r\n\r\n.reviewUsername {\r\n  position: relative;\r\n  left: 60px;\r\n  top: 0px;\r\n  font-size: 17px;\r\n  font-weight: bold;\r\n  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;\r\n}\r\n\r\n.reviewTime {\r\n  position: relative;\r\n  left:60px;\r\n  font-size: 15px;\r\n  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;\r\n}\r\n\r\n.reviewImg {\r\n  position: absolute;\r\n}\r\n\r\n.userDate {\r\n  position: absolute;\r\n}\r\n\r\n.Img {\r\n  border-radius: 50%;\r\n}", ""]);
 
 
 /***/ }),
@@ -13573,7 +13577,7 @@ exports.push([module.i, "\r\n.reviewReplies {\r\n  position:relative;\r\n  paddi
 
 exports = module.exports = __webpack_require__(18)(false);
 // Module
-exports.push([module.i, ".review {\r\n  margin:0px;\r\n  margin-right: 0%;\r\n  margin-top: 3%;\r\n  padding-bottom: 2%;\r\n  border-bottom: 1px solid rgb(221, 221, 221);\r\n}\r\n\r\n\r\n.reviewContent {\r\n  position: relative;\r\n  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;\r\n  font-size: 17px;\r\n  padding-top: 60px;\r\n}\r\n\r\n\r\n.reviewUsername {\r\n  position: relative;\r\n  left: 60px;\r\n  top: 0px;\r\n  font-size: 17px;\r\n  font-weight: bold;\r\n  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;\r\n}\r\n\r\n.reviewTime {\r\n  position: relative;\r\n  left:60px;\r\n  font-size: 15px;\r\n  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;\r\n}\r\n\r\n.reviewImg {\r\n  position: absolute;\r\n}\r\n\r\n.userDate {\r\n  position: absolute;\r\n}\r\n\r\n.Img {\r\n  border-radius: 50%;\r\n}", ""]);
+exports.push([module.i, ".Review {\r\n  margin:5%;\r\n  margin-right: 40%;\r\n}\r\n", ""]);
 
 
 /***/ }),
@@ -13582,7 +13586,7 @@ exports.push([module.i, ".review {\r\n  margin:0px;\r\n  margin-right: 0%;\r\n  
 
 exports = module.exports = __webpack_require__(18)(false);
 // Module
-exports.push([module.i, ".Review {\r\n  margin:5%;\r\n  margin-right: 40%;\r\n}\r\n", ""]);
+exports.push([module.i, ".allButton{\r\n  display:flex;\r\n  justify-content: left;\r\n  margin-top:2%;\r\n}\r\n\r\n.endPageBut {\r\n  margin-right: 20px;\r\n  border-radius: 50%;\r\n  background-color: white;\r\n  border-color: #04868b;\r\n  border-right-color:#04868b;\r\n  border-bottom-color:#04868b;\r\n  border-width: 1px;\r\n  color: #04868b;\r\n  border-style: solid;\r\n}\r\n\r\n.tripleDot {\r\n  margin-right: 20px;\r\n  background-color:white;\r\n  border-color:white;\r\n  color:#04868b;\r\n  border-bottom-style: none;\r\n  border-right-style: none;\r\n  border-top-style: none;\r\n  border-left-style: none;\r\n  font-size:20px;\r\n}\r\n\r\n.pageBut {\r\n  margin-right: 20px;\r\n  background-color:white;\r\n  border-color:white;\r\n  color:#04868b;\r\n  border-bottom-style: none;\r\n  border-right-style: none;\r\n  border-top-style: none;\r\n  border-left-style: none;\r\n  font-size:20px;\r\n}\r\n\r\n.currentPageBut {\r\n  margin-right: 20px;\r\n  background-color:#04868b;\r\n  color:white;\r\n  border-bottom-style: none;\r\n  border-right-style: none;\r\n  border-top-style: none;\r\n  border-left-style: none;\r\n  border-radius:50%;\r\n  font-size:20px;\r\n}\r\n\r\n.currentPageBut:hover{\r\n   text-decoration: underline;\r\n}\r\n\r\n.pageBut:hover{\r\n  text-decoration: underline;\r\n}\r\n\r\n.pageBut:focus {\r\n  outline: none;\r\n}\r\n.currentPageBut:focus {\r\n  outline: none;\r\n}\r\n.endPageBut:focus {\r\n  outline: none;\r\n}\r\n\r\n.tripleDot:focus {\r\n  outline: none;\r\n}\r\n\r\n", ""]);
 
 
 /***/ }),
@@ -13591,7 +13595,7 @@ exports.push([module.i, ".Review {\r\n  margin:5%;\r\n  margin-right: 40%;\r\n}\
 
 exports = module.exports = __webpack_require__(18)(false);
 // Module
-exports.push([module.i, ".allButton{\r\n  display:flex;\r\n  justify-content: left;\r\n  margin-top:2%;\r\n}\r\n\r\n.endPageBut {\r\n  margin-right: 20px;\r\n  border-radius: 50%;\r\n  background-color: white;\r\n  border-color: #04868b;\r\n  border-right-color:#04868b;\r\n  border-bottom-color:#04868b;\r\n  border-width: 1px;\r\n  color: #04868b;\r\n  border-style: solid;\r\n}\r\n\r\n.tripleDot {\r\n  margin-right: 20px;\r\n  background-color:white;\r\n  border-color:white;\r\n  color:#04868b;\r\n  border-bottom-style: none;\r\n  border-right-style: none;\r\n  border-top-style: none;\r\n  border-left-style: none;\r\n  font-size:20px;\r\n}\r\n\r\n.pageBut {\r\n  margin-right: 20px;\r\n  background-color:white;\r\n  border-color:white;\r\n  color:#04868b;\r\n  border-bottom-style: none;\r\n  border-right-style: none;\r\n  border-top-style: none;\r\n  border-left-style: none;\r\n  font-size:20px;\r\n}\r\n\r\n.currentPageBut {\r\n  margin-right: 20px;\r\n  background-color:#04868b;\r\n  color:white;\r\n  border-bottom-style: none;\r\n  border-right-style: none;\r\n  border-top-style: none;\r\n  border-left-style: none;\r\n  border-radius:50%;\r\n  font-size:20px;\r\n}\r\n\r\n.currentPageBut:hover{\r\n   text-decoration: underline;\r\n}\r\n\r\n.pageBut:hover{\r\n  text-decoration: underline;\r\n}\r\n\r\n.pageBut:focus {\r\n  outline: none;\r\n}\r\n.currentPageBut:focus {\r\n  outline: none;\r\n}\r\n.endPageBut:focus {\r\n  outline: none;\r\n}\r\n\r\n.tripleDot:focus {\r\n  outline: none;\r\n}\r\n\r\n", ""]);
+exports.push([module.i, "\r\n.reviewReplies {\r\n  position:relative;\r\n  padding-top: 10px;\r\n  padding-left:30px;\r\n  font-size: 15px;\r\n  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;\r\n}\r\n\r\n.replyInfo{\r\n  position:relative;\r\n  left:60px;\r\n  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;\r\n  width: 87%;\r\n\r\n}\r\n\r\n.replyImage {\r\n  position:absolute;\r\n}\r\n\r\n.OwnerName {\r\n  font-weight: bold;\r\n}\r\n\r\n.OwnerReply {\r\n  margin-top:5px;\r\n}\r\n\r\n.replyTime {\r\n  margin-top:10px;\r\n\r\n}\r\n", ""]);
 
 
 /***/ }),
@@ -25605,7 +25609,7 @@ if (content.locals) {
 /* 232 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var content = __webpack_require__(123);
+var content = __webpack_require__(124);
 
 if (typeof content === 'string') {
   content = [[module.i, content, '']];
